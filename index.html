@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section-tip-calculator">
+      <div class="logo-wrapper">
+        <img src="Images/logo.svg" alt="logo" class="logo-img" />
+      </div>
+
+      <article class="tip-calculator-wrapper">
+        <form class="tip-calculator-form">
+          <div class="input-wrapper">
+            <label for="bill" class="label">Bill</label>
+            <input type="text" placeholder="0" class="user-input input-bill" />
+          </div>
+
+          <div class="input-wrapper">
+            <div class="label">Select Tip %</div>
+            <div class="tip-options">
+              <button type="button" class="tip-btn">5%</button>
+              <button type="button" class="tip-btn">10%</button>
+              <button type="button" class="tip-btn">15%</button>
+              <button type="button" class="tip-btn">25%</button>
+              <button type="button" class="tip-btn">50%</button>
+              <input
+                type="text"
+                class="user-input input-tip"
+                placeholder="Custom"
+                aria-label="tip"
+              />
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <div class="label-wrapper">
+              <label for="people" class="label"> Number of People </label>
+              <span class="error-msg display--none">Can't be zero</span>
+            </div>
+            <input
+              type="text"
+              class="user-input input-people"
+              placeholder="0"
+            />
+          </div>
+        </form>
+
+        <ul class="output-list">
+          <li class="output-item">
+            <div class="output-item-contents">
+              <p class="output-item-title">Tip Amount</p>
+              <p class="output-item-text">/ person</p>
+            </div>
+            <p class="output-item-price">$ 0.00</p>
+          </li>
+
+          <li class="output-item">
+            <div class="output-item-contents">
+              <p class="output-item-title">Total</p>
+              <p class="output-item-text">/ person</p>
+            </div>
+            <p class="output-item-price">$ 0.00</p>
+          </li>
+
+          <li class="output-item reset-btn-wrapper">
+            <button type="reset" class="reset-btn">Reset</button>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </body>
+</html>

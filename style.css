@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.input--error {
+  outline: 2px solid hsl(0, 100%, 59%);
+}
+
+.display--none {
+  display: none;
+}
+
+.section-tip-calculator {
+  max-width: 80rem;
+  margin: 12.8rem auto;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.4rem;
+}
+
+.tip-calculator-wrapper {
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 2rem;
+  padding: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+.tip-calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  padding: 2rem 0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: hsl(186, 14%, 43%);
+}
+
+.user-input {
+  font-family: "Space Mono", monospace;
+  max-width: 100%;
+  padding: 0.8rem 2.4rem;
+  border: none;
+  background-color: hsl(189, 47%, 97%);
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  background-repeat: no-repeat;
+  background-position: left 2rem center;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: hsl(0, 100%, 59%);
+}
+
+.error-msg {
+  font-size: 1.3rem;
+  margin-left: auto;
+}
+
+.user-input:focus {
+  outline: 2px solid hsl(184, 14%, 56%);
+}
+
+.input-bill {
+  background-image: url(Images/icon-dollar.svg);
+}
+
+.input-people {
+  background-image: url(Images/icon-person.svg);
+}
+
+.user-input::placeholder {
+  font-weight: 550;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.tip-btn {
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  max-width: 100%;
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 1.2rem;
+  color: hsl(189, 47%, 97%);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.tip-btn:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.input-tip {
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  color: hsl(183, 100%, 15%);
+}
+
+.input-tip:focus {
+  text-align: right;
+  outline: 2px solid hsl(184, 14%, 56%);
+}
+
+.output-list {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1.2rem;
+  padding: 3.2rem 2.4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.output-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-item-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.output-item-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: hsl(185, 41%, 84%);
+}
+
+.output-item-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(172, 67%, 45%);
+}
+
+.output-item-price {
+  font-size: 4rem;
+  font-weight: 600;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset-btn-wrapper {
+  margin-top: auto;
+}
+
+.reset-btn {
+  display: block;
+  padding-bottom: auto;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background-color: hsl(186, 14%, 43%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 84%);
+}
