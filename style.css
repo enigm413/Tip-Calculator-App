@@ -15,11 +15,24 @@ body {
 }
 
 .input--error {
-  outline: 2px solid hsl(0, 100%, 59%);
+  outline: 2px solid hsl(0, 100%, 59%) !important;
 }
 
 .display--none {
-  display: none;
+  display: none !important;
+}
+
+.bgcolor--green400 {
+  background-color: hsl(172, 67%, 45%) !important;
+}
+
+.bgcolor--grey500 {
+  background-color: hsl(186, 14%, 43%) !important;
+}
+
+.selected-tip {
+  background-color: hsl(172, 67%, 45%) !important;
+  color: hsl(183, 100%, 15%) !important;
 }
 
 .section-tip-calculator {
@@ -64,7 +77,7 @@ body {
 .user-input {
   font-family: "Space Mono", monospace;
   max-width: 100%;
-  padding: 0.8rem 2.4rem;
+  padding: 1.2rem 2.8rem;
   border: none;
   background-color: hsl(189, 47%, 97%);
   box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.2);
@@ -75,6 +88,7 @@ body {
   text-align: right;
   background-repeat: no-repeat;
   background-position: left 2rem center;
+  cursor: pointer;
 }
 
 .label-wrapper {
@@ -199,6 +213,7 @@ body {
   font-weight: 600;
   border: none;
   border-radius: 0.4rem;
+  text-transform: uppercase;
 }
 
 .reset-btn:hover {

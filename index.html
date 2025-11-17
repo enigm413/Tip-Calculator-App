@@ -28,11 +28,11 @@
           <div class="input-wrapper">
             <div class="label">Select Tip %</div>
             <div class="tip-options">
-              <button type="button" class="tip-btn">5%</button>
-              <button type="button" class="tip-btn">10%</button>
-              <button type="button" class="tip-btn">15%</button>
-              <button type="button" class="tip-btn">25%</button>
-              <button type="button" class="tip-btn">50%</button>
+              <button type="button" class="tip-btn" id="tip-5">5%</button>
+              <button type="button" class="tip-btn" id="tip-10">10%</button>
+              <button type="button" class="tip-btn" id="tip-15">15%</button>
+              <button type="button" class="tip-btn" id="tip-25">25%</button>
+              <button type="button" class="tip-btn" id="tip-50">50%</button>
               <input
                 type="text"
                 class="user-input input-tip"
@@ -61,7 +61,7 @@
               <p class="output-item-title">Tip Amount</p>
               <p class="output-item-text">/ person</p>
             </div>
-            <p class="output-item-price">$ 0.00</p>
+            <p class="output-item-price" id="tip-per-person">$ 0.00</p>
           </li>
 
           <li class="output-item">
@@ -69,7 +69,7 @@
               <p class="output-item-title">Total</p>
               <p class="output-item-text">/ person</p>
             </div>
-            <p class="output-item-price">$ 0.00</p>
+            <p class="output-item-price" id="total-per-person">$ 0.00</p>
           </li>
 
           <li class="output-item reset-btn-wrapper">
@@ -78,5 +78,7 @@
         </ul>
       </article>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
