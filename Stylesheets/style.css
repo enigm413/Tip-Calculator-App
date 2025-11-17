@@ -37,6 +37,7 @@ body {
 
 .section-tip-calculator {
   max-width: 80rem;
+  padding: 0 3.2rem;
   margin: 12.8rem auto;
 }
 
@@ -108,11 +109,11 @@ body {
 }
 
 .input-bill {
-  background-image: url(Images/icon-dollar.svg);
+  background-image: url(../Images/icon-dollar.svg);
 }
 
 .input-people {
-  background-image: url(Images/icon-person.svg);
+  background-image: url(../Images/icon-person.svg);
 }
 
 .user-input::placeholder {

@@ -1,0 +1,57 @@
+/**************************/
+/***Small Laptop Design****/
+/**************************/
+
+@media (max-width: 900px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-tip-calculator {
+    margin: 9.6rem auto;
+    padding: 0 2.4rem;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 4.8rem;
+  }
+
+  .tip-calculator-wrapper {
+    padding: 2.4rem;
+    gap: 2.4rem;
+  }
+
+  .output-item-price {
+    font-size: 3.2rem;
+  }
+}
+
+/**************************/
+/******Tablet Design*******/
+/**************************/
+
+@media (max-width: 660px) {
+  .section-tip-calculator {
+    padding: 0 3.6rem;
+  }
+  .tip-calculator-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************************/
+/******Mobile Design*******/
+/**************************/
+@media (max-width: 450px) {
+  .section-tip-calculator {
+    padding: 0 1.2rem;
+  }
+
+  .tip-calculator-wrapper {
+    padding: 1.2rem;
+  }
+
+  .tip-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
