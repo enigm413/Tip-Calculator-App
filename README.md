@@ -17,7 +17,7 @@ The calculator displays an intuitive split-screen interface featuring:
 
 ### Project Preview
 
-![Project Preview](./Images/screenshots/desktop-preview.png)
+![Project Preview](/Images/Screenshots/desktop-preview.png)
 
 ## Features
 
